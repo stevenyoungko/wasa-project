@@ -19,6 +19,11 @@ const routes = [
         name: 'Form',
         path: 'form',
         component: () => import('../views/Form.vue')
+      },
+      {
+        name: 'ApiConnect',
+        path: 'api-connect',
+        component: () => import('../views/ApiConnect.vue')
       }
     ]
   },

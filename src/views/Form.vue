@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="form-container">
     <form class="form theme-border">
       <label>姓名:</label>
       <FormCell v-model="form.name" placeHolder="請輸入姓名" />
@@ -17,37 +17,20 @@
       <p class="text">性別: {{ form.gender }}</p>
       <p class="text">分數: {{ form.score }}級</p>
     </div>
-
-    <div>
-       <table>
-        <thead>
-          <tr>
-            <th v-for="col in  columns" :key="col">{{ col }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="item in tableData" :key="item.city">
-            <td v-for="col in columns" :key="col">
-              {{ item[col] }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 </template>
 <script>
 import FormCell from '@/components/FormCell'
-import axios from "axios";
 export default {
+  name: 'Form',
   components: {
     FormCell
   },
   metaInfo() {
     return {
-      title: "About",
+      title: "Form",
       meta: [
-        { name: 'description', content: "This is about." }
+        { name: 'description', content: "This is form." }
       ]
     };
   },
@@ -66,28 +49,8 @@ export default {
         { label: 'A', value: 'A' },
         { label: 'B', value: 'B' },
         { label: 'C', value: 'C' },
-      ],
-      tableData: [],
-      columns: [
-        'city',
-        'name'
       ]
     }
-  },
-  created() {
-    this.getFakeData()
-  },
-  methods: {
-    blueTheme() {
-      this.$store.dispatch("themeChange", "blue");
-    },
-    redTheme() {
-      this.$store.dispatch("themeChange", "red");
-    },
-    async getFakeData() {
-      const { data } = await axios.get('https://mocki.io/v1/d4867d8b-b5d5-4a48-a4ab-79131b5809b8')
-      this.tableData = data
-    }
-  },
+  }
 };
 </script>

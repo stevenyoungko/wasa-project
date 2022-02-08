@@ -1,5 +1,5 @@
 <template>
-  <main class="home">
+  <main class="theme-container">
     <section class="left">
       <h1 class="title theme-title">
         Hi, I am <br />
@@ -25,12 +25,12 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Theme',
   metaInfo() {
     return {
-      title: "Home",
+      title: "Theme",
       meta: [
-        { name: 'description', content: "This is home." }
+        { name: 'description', content: "This is theme." }
       ]
     };
   }

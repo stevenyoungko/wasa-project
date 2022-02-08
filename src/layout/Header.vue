@@ -26,7 +26,7 @@ export default {
       navList: [
         { name: '主題換色', path: '/' },
         { name: 'From表單', path: '/form' },
-        { name: 'Resume', path: '' },
+        { name: 'Api串接', path: '/api-connect' },
         { name: 'Contact', path: '' },
         { name: 'Project', path: '' },
       ],
