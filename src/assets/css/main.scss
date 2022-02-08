@@ -1,3 +1,10 @@
 @import '../css/theme/themify.scss';
 @import '../css/page/about.scss';
+@import '../css/page/home.scss';
 @import '../css/common/header.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

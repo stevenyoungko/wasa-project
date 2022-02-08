@@ -1,0 +1,30 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+
+  .left {
+    flex: 3 1 500px;
+    padding: 2rem;
+    text-align: left;
+    .title {
+      font-size: 4rem;
+    }
+    .description {
+      font-size: 1.5rem;
+      padding: 1rem 0rem;
+    }
+  }
+  .right {
+    flex: 1 1 600px;
+    position: relative;
+    .image {
+      border-radius: 50%;
+      width: 20vw;
+      height: 20vw;
+      position: absolute;
+      top: 55vh;
+      right: 20vw;
+      transform: translateY(-50%);
+    }
+  }
+}

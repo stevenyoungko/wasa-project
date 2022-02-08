@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="nav theme_title">
+    <nav class="nav theme-background">
       <ul class="nav-inner">
         <li v-for="nav in navList" :key="nav.name" class="nav-item">
           <router-link :to="nav.path" class="nav-link">{{ nav.name }}</router-link>

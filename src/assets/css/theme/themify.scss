@@ -20,9 +20,13 @@
 
 // 使用混合方法
 @include themify($themes) {
-  .theme_title {
+  .theme-background {
     width: 100%;
     background-color: themed('theme-title-background');
+    color: themed('theme-title-color');
+  }
+
+  .theme-title {
     color: themed('theme-title-color');
   }
 
