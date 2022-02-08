@@ -1,0 +1,17 @@
+@import './themeVariable.scss';
+
+//取出主題色
+@mixin themify($themes) {
+  @each $theme-name,
+  $map in $themes {
+    $myMap: $map !global;
+    .theme-#{$theme-name} {
+      @content; 
+    }
+  }
+}
+
+//從主題色map中取出對應的顏色
+@function themed($key) {
+  @return map-get($myMap, $key)
+}
