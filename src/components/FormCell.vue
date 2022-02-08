@@ -12,10 +12,8 @@
 
     <div v-if="formType === 'select'">
       <select v-model="newValue">
-        <option disabled value="">请选择</option>
-        <option value="A">A</option>
-        <option value="B">B</option>
-        <option value="C">C</option>
+        <option disabled value="">{{ placeHolder }}</option>
+        <option v-for="option in selectOptions" :key="option.label" :value="option.value">{{ option.label }}</option>
       </select>
     </div>
   </div>
@@ -32,6 +30,14 @@ export default {
     formType: {
       type: String,
       default: 'text'
+    },
+    placeHolder: {
+      type: String,
+      default: ''
+    },
+    selectOptions: {
+      type: Array,
+      default: () => []
     },
     value: {
       type: String,
