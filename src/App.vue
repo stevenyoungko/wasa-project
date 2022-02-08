@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="themeClass" class="theme-button">
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -8,7 +8,31 @@
   </div>
 </template>
 
+<script>
+export default {
+  created() {
+    if (localStorage.theme) {
+      this.$store.dispatch("themeChange", localStorage.theme)
+    } else {
+      localStorage.theme = this.$store.state.theme
+    }
+  },
+  watch: {
+    themeClass() {
+      localStorage.theme = this.$store.state.theme
+    },
+  },
+  computed: {
+    themeClass() {
+      return `theme-${this.$store.state.theme}`
+    },
+  },
+}
+</script>
+
 <style lang="scss">
+@import "./assets/css/theme/themify.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
