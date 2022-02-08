@@ -22,6 +22,14 @@
 import { getFakeData } from '../apis/index'
 export default {
   name: 'ApiConnect',
+  metaInfo() {
+    return {
+      title: "Api",
+      meta: [
+        { name: 'description', content: "This is api." }
+      ]
+    };
+  },
   data() {
     return {
       tableData: [],
