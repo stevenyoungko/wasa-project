@@ -1,14 +1,11 @@
 <template>
   <div id="app" :class="themeClass" class="theme-button">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <RouterView />
   </div>
 </template>
 
 <script>
+
 export default {
   created() {
     if (localStorage.theme) {

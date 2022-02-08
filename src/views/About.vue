@@ -1,9 +1,10 @@
 <template>
   <div class="about">
-    <button @click="redTheme">红色主题</button>
-    <button @click="blueTheme">蓝色主题</button>
-    <hr />
-    <h1 class="theme_title">This is an about page</h1>
+    <div>
+      <button @click="redTheme">红色主题</button>
+      <button @click="blueTheme">蓝色主题</button>
+    </div>  
+    <br />
     <div>
       <button class="theme-default-btn">默认</button>
       <button class="theme-primary-btn">主要</button>

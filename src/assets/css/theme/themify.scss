@@ -22,7 +22,6 @@
 @include themify($themes) {
   .theme_title {
     width: 100%;
-    height: 40px;
     background-color: themed('theme-title-background');
     color: themed('theme-title-color');
   }
