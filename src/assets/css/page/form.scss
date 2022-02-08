@@ -1,0 +1,21 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+
+  .form {
+    text-align: left;
+    padding: 24px;
+    width: 600px;
+    margin-bottom: 12px;
+
+    .title {
+      margin-bottom: 12px;
+    }
+    .text {
+      margin-bottom: 12px;
+    }
+  }
+}

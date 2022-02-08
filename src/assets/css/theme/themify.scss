@@ -19,12 +19,21 @@
   }
 }
 
+@mixin border($value) {
+  border: 2px solid themed('btn-#{$value}-background');
+  border-radius: 4px
+}
+
 // 使用混合方法
 @include themify($themes) {
   .theme-background {
     width: 100%;
     background-color: themed('theme-title-background');
     color: themed('theme-title-color');
+  }
+
+  .theme-border {
+    @include border('primary');
   }
 
   .theme-title {

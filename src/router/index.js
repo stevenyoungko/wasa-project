@@ -11,14 +11,14 @@ const routes = [
     component: Layout,
     children: [
       {
-        name: 'Home',
+        name: 'Theme',
         path: '',
-        component: () => import('../views/Home.vue')
+        component: () => import('../views/Theme.vue')
       },
       {
-        name: 'About',
-        path: 'about',
-        component: () => import('../views/About.vue')
+        name: 'Form',
+        path: 'form',
+        component: () => import('../views/Form.vue')
       }
     ]
   },

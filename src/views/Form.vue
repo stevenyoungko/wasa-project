@@ -1,26 +1,21 @@
 <template>
   <div class="about">
-    <div>
-      <button @click="redTheme">红色主题</button>
-      <button @click="blueTheme">蓝色主题</button>
-    </div>  
-    <br />
-    <div>
-      <button class="theme-default-btn">默认</button>
-      <button class="theme-primary-btn">主要</button>
-      <button class="theme-info-btn">提示</button>
-    </div>
-    <br />
-    <FormCell v-model="form.name" />
-    <br />
-    <FormCell v-model="form.gender" formType="radio" />
-    <br />
-    <FormCell v-model="form.score" formType="select" />
+    <form class="form theme-border">
+      <label>姓名:</label>
+      <FormCell v-model="form.name" placeHolder="請輸入姓名" />
+      <br />
+      <label>性別:</label>
+      <FormCell v-model="form.gender" formType="radio" :radioOptions="genderList" />
+      <br />
+      <label>分數:</label>
+      <FormCell v-model="form.score" formType="select" placeHolder="請選擇分數" :selectOptions="scoreList" />
+    </form>
 
-    <div>
-      <p>姓名: {{ form.name }}</p>
-      <p>性別: {{ form.gender }}</p>
-      <p>分數: {{ form.score }}級</p>
+    <div class="form theme-border">
+      <h2 class="title">父子元件雙向繫結</h2>
+      <p class="text">姓名: {{ form.name }}</p>
+      <p class="text">性別: {{ form.gender }}</p>
+      <p class="text">分數: {{ form.score }}級</p>
     </div>
 
     <div>
@@ -63,6 +58,15 @@ export default {
         gender: '',
         score: ''
       },
+      genderList: [
+        { label: '男', value: 'boy' },
+        { label: '女', value: 'gril' }
+      ],
+      scoreList: [
+        { label: 'A', value: 'A' },
+        { label: 'B', value: 'B' },
+        { label: 'C', value: 'C' },
+      ],
       tableData: [],
       columns: [
         'city',

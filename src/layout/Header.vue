@@ -25,7 +25,7 @@ export default {
       theme: 'blue',
       navList: [
         { name: '主題換色', path: '/' },
-        { name: 'About', path: '/about' },
+        { name: 'From表單', path: '/form' },
         { name: 'Resume', path: '' },
         { name: 'Contact', path: '' },
         { name: 'Project', path: '' },

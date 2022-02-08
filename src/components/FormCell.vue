@@ -1,13 +1,12 @@
 <template>
   <div>
-    <input v-if="formType === 'text'" type="text" v-model="newValue">
+    <input v-if="formType === 'text'" type="text" v-model="newValue" :placeholder="placeHolder">
 
     <div v-if="formType === 'radio'">
-      <input type="radio" id="boy" value="男" v-model="newValue">
-      <label for="boy">男</label>
-      <br>
-      <input type="radio" id="girl" value="女" v-model="newValue">
-      <label for="girl">女</label>
+      <span v-for="radio in radioOptions" :key="radio.label">
+        <input type="radio" :id="radio.value" :value="radio.label" v-model="newValue">
+        <label :for="radio.value">{{ radio.label }}</label>
+      </span>
     </div>
 
     <div v-if="formType === 'select'">
@@ -36,6 +35,10 @@ export default {
       default: ''
     },
     selectOptions: {
+      type: Array,
+      default: () => []
+    },
+    radioOptions: {
       type: Array,
       default: () => []
     },
