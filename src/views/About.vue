@@ -47,6 +47,14 @@ export default {
   components: {
     FormCell
   },
+  metaInfo() {
+    return {
+      title: "About",
+      meta: [
+        { name: 'description', content: "This is about." }
+      ]
+    };
+  },
   data() {
     return {
       form: {

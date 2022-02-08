@@ -13,6 +13,14 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  metaInfo() {
+    return {
+      title: "Home",
+      meta: [
+        { name: 'description', content: "This is home." }
+      ]
+    };
   }
 }
 </script>
