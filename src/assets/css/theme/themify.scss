@@ -10,6 +10,7 @@
   width:100px;
   height:50px;
   border-radius: 10px;
+  margin-right: 4px;
 
   &:hover {
     background-color: themed('btn-#{$value}-background-hover');
