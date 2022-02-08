@@ -1,22 +1,22 @@
 @import './variable.scss';
 
 $themes:(
-  primary:(
+  blue:(
     // layout
-    basis-color: $primary-color,
+    basis-color: $blue-color,
     menu-hover-color: #FFFFFF,
-    them-title-background:#D2D8EA,
-    them-title-color: #1684FC,
+    theme-title-background:#D2D8EA,
+    theme-title-color: #1684FC,
     // button
-    btn-primary-background: $primary-color,
-    btn-primary-boder: 1px solid $primary-color,
+    btn-primary-background: $blue-color,
+    btn-primary-boder: 1px solid $blue-color,
     btn-primary-color: #FFFFFF,
     btn-primary-background-hover:#409eff,
     btn-primary-boder-hover: 1px solid #409eff,
     btn-primary-color-hover: #FFFFFF,
 
-    btn-info-background: #909399,
-    btn-info-boder: 1px solid #909399,
+    btn-info-background: $info-color,
+    btn-info-boder: 1px solid $info-color,
     btn-info-color: #FFFFFF,
     btn-info-background-hover:#a6a9ad,
     btn-info-boder-hover: 1px solid #a6a9ad,
@@ -25,22 +25,22 @@ $themes:(
     btn-default-background-hover:#F4F4F5,
     btn-default-boder-hover: 1px solid #F4F4F5,
   ),
-  danger:(
+  red:(
     // layout
-    basis-color: $danger-color,
+    basis-color: $red-color,
     menu-hover-color: #FFFFFF,
-    them-title-background: #EAD2D2,
-    them-title-color: #E33F3F,
+    theme-title-background: #EAD2D2,
+    theme-title-color: #E33F3F,
     // button
-    btn-primary-background: $danger-color,
-    btn-primary-boder: 1px solid $danger-color,
+    btn-primary-background: $red-color,
+    btn-primary-boder: 1px solid $red-color,
     btn-primary-color: #FFFFFF,
     btn-primary-background-hover: #f86065,
     btn-primary-boder-hover: 1px solid #f86065,
     btn-primary-color-hover: #FFFFFF, 
 
-    btn-info-background: #909399,
-    btn-info-boder: 1px solid #909399,
+    btn-info-background: $info-color,
+    btn-info-boder: 1px solid $info-color,
     btn-info-color: #FFFFFF,
     btn-info-background-hover:#a6a9ad,
     btn-info-boder-hover: 1px solid #a6a9ad,

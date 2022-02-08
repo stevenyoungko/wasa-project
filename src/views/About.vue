@@ -13,10 +13,10 @@
 export default {
   methods: {
     blueTheme() {
-      this.$store.dispatch("themeChange", "primary");
+      this.$store.dispatch("themeChange", "blue");
     },
     redTheme() {
-      this.$store.dispatch("themeChange", "danger");
+      this.$store.dispatch("themeChange", "red");
     },
   },
 };
