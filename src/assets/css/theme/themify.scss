@@ -21,7 +21,7 @@
 
 @mixin border($value) {
   border: 2px solid themed('btn-#{$value}-background');
-  border-radius: 4px
+  border-radius: 12px
 }
 
 // 使用混合方法

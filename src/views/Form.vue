@@ -1,13 +1,13 @@
 <template>
   <div class="form-container">
     <form class="form theme-border">
-      <label>姓名:</label>
+      <label class="label">姓名:</label>
       <FormCell v-model="form.name" placeHolder="請輸入姓名" />
       <br />
-      <label>性別:</label>
+      <label class="label">性別:</label>
       <FormCell v-model="form.gender" formType="radio" :radioOptions="genderList" />
       <br />
-      <label>分數:</label>
+      <label class="label">分數:</label>
       <FormCell v-model="form.score" formType="select" placeHolder="請選擇分數" :selectOptions="scoreList" />
     </form>
 

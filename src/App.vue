@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="themeClass" class="theme-button">
+  <div id="app" :class="themeClass">
     <RouterView />
   </div>
 </template>
@@ -34,5 +34,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100vh;
+  background-color: #F9FAFB;
 }
 </style>
