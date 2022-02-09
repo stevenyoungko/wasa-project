@@ -2,7 +2,7 @@
   <div class="form-container">
     <form class="form theme-border">
       <label class="label">姓名:</label>
-      <FormCell v-model="form.name" placeHolder="請輸入姓名" />
+      <FormCell v-model="form.name" placeHolder="請輸入姓名" maxlength="2" />
       <br />
       <label class="label">性別:</label>
       <FormCell v-model="form.gender" formType="radio" :radioOptions="genderList" />

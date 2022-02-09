@@ -1,19 +1,17 @@
 # wasa-project
 
-## Project setup
-```
-npm install
-```
+## 環境與連結
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Environment  | Link
+------------ | ------------------------------------------
+Prod         | https://wasa-project-b7bfe.web.app/
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Component
+>- FormCell: 父子元件雙向聯繫，資料源由外而內傳入提高客制彈性，透過formType決定類型，可由外傳入客製化屬性。
+>- PrimaryButton: 利用slot給預設值，並可透過prop決定是按鈕還是 a link tag。
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Api
+>- 導入axios並在request.js做 request response 攔截。api統一放在api文件夾統一管理。
+
+## 主題色切換
+>- 主題色統一放置 assets/css/theme去做統一管理
