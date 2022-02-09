@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      theme: 'blue',
+      theme: localStorage.theme,
       navList: [
         { name: '主題換色', path: '/' },
         { name: 'From表單', path: '/form' },
