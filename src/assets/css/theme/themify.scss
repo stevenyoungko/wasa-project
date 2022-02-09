@@ -11,6 +11,12 @@
   height:50px;
   border-radius: 10px;
   margin-right: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
 
   &:hover {
     background-color: themed('btn-#{$value}-background-hover');
@@ -19,6 +25,7 @@
   }
 }
 
+// 編框混合
 @mixin border($value) {
   border: 2px solid themed('btn-#{$value}-background');
   border-radius: 12px

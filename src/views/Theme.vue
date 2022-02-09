@@ -13,7 +13,8 @@
       </p>
       <div>
         <button class="theme-default-btn">默认</button>
-        <button class="theme-primary-btn">主要</button>
+        <PrimaryButton />
+        <PrimaryButton to="/form" style="width: 200px;">去表單</PrimaryButton>
         <button class="theme-info-btn">提示</button>
     </div>
     </section>
@@ -24,8 +25,12 @@
 </template>
 
 <script>
+import PrimaryButton from '../components/PrimaryButton.vue'
 export default {
   name: 'Theme',
+  components: {
+    PrimaryButton
+  },
   metaInfo() {
     return {
       title: "Theme",
