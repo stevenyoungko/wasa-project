@@ -31,7 +31,6 @@
     class="form-input" 
     type="text" 
     v-model="newValue" 
-    :placeholder="placeHolder"
     v-bind="customAttr"
   >
 </template>
