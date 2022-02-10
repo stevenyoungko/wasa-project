@@ -5,7 +5,7 @@
     v-model="newValue"
     v-bind="customAttr"
   >
-    <option disabled value="">{{ placeHolder }}</option>
+    <option disabled value="">{{ selectPlaceHolder }}</option>
     <option 
       v-for="option in selectOptions" 
       :key="option.label" 
@@ -48,7 +48,7 @@ export default {
       type: String,
       default: 'text'
     },
-    placeHolder: {
+    selectPlaceHolder: {
       type: String,
       default: ''
     },

@@ -2,13 +2,13 @@
   <div class="form-container">
     <form class="form theme-border">
       <label class="label">姓名:</label>
-      <FormCell v-model="form.name" placeHolder="請輸入姓名" maxlength="2" />
+      <FormCell v-model="form.name" placeholder="請輸入姓名" maxlength="2" />
       <br />
       <label class="label">性別:</label>
       <FormCell v-model="form.gender" formType="radio" :radioOptions="genderList" />
       <br />
       <label class="label">分數:</label>
-      <FormCell v-model="form.score" formType="select" placeHolder="請選擇分數" :selectOptions="scoreList" />
+      <FormCell v-model="form.score" formType="select" selectPlaceHolder="請選擇分數" :selectOptions="scoreList" />
     </form>
 
     <div class="form theme-border">
